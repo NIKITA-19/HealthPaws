@@ -6,7 +6,7 @@ const path=require('path');
 const PORT = process.env.PORT ||5000;
 app.use('/home',express.static(path.join(__dirname, 'homepage')));
 app.use('/adopt',express.static(path.join(__dirname, 'adoptpage')));
-app.use('/',express.static(path.join(__dirname, 'loginpage')));
+app.use('/',express.static(path.join(__dirname, 'homepage')));
 app.use('/form',express.static(path.join(__dirname, 'formpage')));
 app.use('/diseases',express.static(path.join(__dirname, 'Diseasess')));
 app.use('/product',express.static(path.join(__dirname, 'product')));
