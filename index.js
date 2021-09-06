@@ -14,7 +14,7 @@ app.use('/product',express.static(path.join(__dirname, 'product')));
 
 app.get('/',function(req,res)
 {
-  res.sendFile(__dirname+"/loginpage/index.html");
+  res.sendFile(__dirname+"/homepage/home.html");
 });
 app.get('/home',function(req,res)
 {
