@@ -4,7 +4,7 @@ const app=express();
 const logapp=express();
 const path=require('path');
 const PORT = process.env.PORT ||5000;
-app.use('/home',express.static(path.join(__dirname, 'homepage')));
+app.use('/home',express.static(path.join(__dirname, 'loginpage')));
 app.use('/adopt',express.static(path.join(__dirname, 'adoptpage')));
 app.use('/',express.static(path.join(__dirname, 'homepage')));
 app.use('/form',express.static(path.join(__dirname, 'formpage')));
@@ -14,7 +14,7 @@ app.use('/product',express.static(path.join(__dirname, 'product')));
 
 app.get('/',function(req,res)
 {
-  res.sendFile(__dirname+"/homepage/home.html");
+  res.sendFile(__dirname+"/loginpage/home.html");
 });
 app.get('/home',function(req,res)
 {
